@@ -3,18 +3,16 @@
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/Audio.hpp>
-#include <SFML/Graphics.hpp>
+#include <SFML/Network.hpp>
+#include "Game.h"
 
 int main(int argc, char const *argv[])
 {
-    //GameWindow
-    sf::RenderWindow window(sf::VideoMode(640,480), "ProjectCF", sf::Style::Titlebar | sf::Style::Close | sf::Style::Fullscreen);
-    
-    //Event manager for Inputs
-    sf::Event ev;  
+    //Game init
+    Game game();
 
     //GameLoop
-    while (window.isOpen())
+    while (Game::getWindowIsOpen)
     {
         while (window.pollEvent(ev))
         {
@@ -35,25 +33,16 @@ int main(int argc, char const *argv[])
         }
         
         //update
-       // onUpdate();
+
     
         //render
-       // onRender(window);
+        window.clear();//clear old frame
+        /*
+        Draw here
+        */
+        window.display(); //update new frame
+
     }
     
     return 0;
-}
-
-// implements changes
-int onUpdate(){
-    std::cout << "I Update" << "\n" ;
-}
-
-// render the graphic on the window
-int onRender(sf::RenderWindow window){
-    window.clear();
-
-
-    //tell window what to draw
-    window.display()
 }
