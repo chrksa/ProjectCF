@@ -1,0 +1,5 @@
+-----------------------------------------------------------------------------------------------
+https://www.sfml-dev.org/tutorials/2.4/start-linux.php
+g++ -c main.cpp
+g++ main.o -o test -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio -lsfml-network
+-----------------------------------------------------------------------------------------------
