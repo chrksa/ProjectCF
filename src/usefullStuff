@@ -1,5 +1,7 @@
 -----------------------------------------------------------------------------------------------
 https://www.sfml-dev.org/tutorials/2.4/start-linux.php
-g++ -c main.cpp
-g++ main.o -o test -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio -lsfml-network
+sudo apt-get install libsfml-dev  // visiual library - install linux
+g++ -c *.cpp
+g++ *.o -o test -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio -lsfml-network
 -----------------------------------------------------------------------------------------------
+
