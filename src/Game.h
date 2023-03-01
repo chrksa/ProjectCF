@@ -37,10 +37,4 @@ public:
 
 };
 
-Game::Game(/* args */)
-{
-}
 
-Game::~Game()
-{
-}
