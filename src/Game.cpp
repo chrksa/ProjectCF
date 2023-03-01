@@ -1,9 +1,14 @@
 #include <iostream>
 #include "Game.h"
+#include <SFML/Graphics.hpp>
+#include <SFML/System.hpp>
+#include <SFML/Window.hpp>
+#include <SFML/Audio.hpp>
+#include <SFML/Network.hpp>
 
 void Game::initVariables()
 {
-    this->window=nullptr;
+    this->window=nullptr; // initialize window
 }
 
 void Game::initWindow()
