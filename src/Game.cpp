@@ -1,5 +1,7 @@
 #include <iostream>
 #include "Game.h"
+#include "Entity.h"
+#include "Map.h"
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 #include <SFML/Window.hpp>
@@ -69,7 +71,7 @@ void Game::render()
 {   
     /*
     Renders game objects
-    -clear widnow 
+    -clear window 
     -render objects
     -display frame in window
     */
