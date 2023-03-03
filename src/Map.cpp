@@ -26,3 +26,8 @@ Map::Map(int mapHeight, int mapWidth)
     this->mapHeight=mapHeight;
     this->mapWidth=mapWidth;
 }
+
+Map::~Map()
+{
+    delete this;
+}

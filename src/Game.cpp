@@ -15,8 +15,8 @@ void Game::initVariables()
 
 void Game::initWindow()
 {
-    this->videomode.height=640;
-    this->videomode.width=480;
+    this->videomode.height=480;
+    this->videomode.width=640;
     
     this->window=new sf::RenderWindow (this->videomode, "ProjectCF", sf::Style::Titlebar | sf::Style::Close );
 
@@ -79,6 +79,12 @@ void Game::render()
     this->window->clear(sf::Color(255,0,0,255));
 
     //Draw game objects here
+    
 
     this->window->display();
+}
+
+void Game::setFPS(bool lockedFPS)
+{
+    this->lockedFPS= lockedFPS;
 }

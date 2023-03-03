@@ -13,20 +13,3 @@ public:
     Map(int mapSize);
     ~Map();
 };
-
-Map::Map(/* args */)
-{    
-
-}
-Map::Map(int mapSize)
-{
-    
-}
-Map::Map(int mapHeight, int mapWidth)
-{
-    
-}
-
-Map::~Map()
-{
-}
