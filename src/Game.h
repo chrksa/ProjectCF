@@ -18,6 +18,9 @@ private:
     sf::Event ev;
     sf::VideoMode videomode;
 
+    //variables
+    int FPS= 60;
+    bool lockedFPS= false;
 
     //private Functions
     void initVariables();
@@ -34,6 +37,7 @@ public:
     void pollEvents();
     void update();
     void render();
+    void setFPS(bool lockedFPS);
 
 };
 
